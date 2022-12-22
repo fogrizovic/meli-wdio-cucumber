@@ -1,0 +1,49 @@
+{
+    "env": {
+        "browser": true,
+        "es2020": true,
+        "webdriverio/wdio": true
+    },
+    "plugins": [
+        "chai-expect",
+        "chai-friendly",
+        "cucumber",
+        "webdriverio"
+    ],
+    "extends": [
+        "airbnb-base"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 11,
+        "sourceType": "module"
+    },
+    "rules": {
+        "function-paren-newline": ["error", "consistent"],
+        "no-unused-expressions": 0,
+        "linebreak-style": 0,
+        "class-methods-use-this": 0,
+        "prefer-arrow-callback": 0,
+        "func-names": 0,
+        "chai-friendly/no-unused-expressions": 2,
+        "cucumber/expression-type": 2,
+        "cucumber/no-restricted-tags": [
+            2,
+            "wip"
+        ],
+        "cucumber/no-arrow-functions": 2,
+        "chai-expect/no-inner-compare": 2,
+        "chai-expect/no-inner-literal": 2,
+        "chai-expect/missing-assertion": 2,
+        "chai-expect/terminating-properties": 2,
+        "max-len": [
+            "error",
+            {
+                "code": 160
+            }
+        ]
+    },
+    "globals": {
+        "expect": false,
+        "logger": false
+    }
+}
